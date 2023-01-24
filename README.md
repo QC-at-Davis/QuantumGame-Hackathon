@@ -1,12 +1,5 @@
-# Hackathon Submissions Platform Template
-
-Here's a template repo for you to generate a submission platform for your hackathon for free on GitHub.
-
 ## Table Of Contents
 
-- [Hackathon Submissions Platform Template](#hackathon-submissions-platform-template)
-  * [Steps To Use This Repo](#steps-to-use-this-repo)
-  * [Exporting Submission Links](#exporting-submission-links)
 - [XYZ Hackathon: Example Hackathon Description](#xyz-hackathon-example-hackathon-description)
   * [About The Hackathon](#about-the-hackathon)
   * [Timeline](#timeline)
@@ -14,20 +7,8 @@ Here's a template repo for you to generate a submission platform for your hackat
   * [Prizes](#prizes)
   * [Judging Parameters](#judging-parameters)
   * [How To Submit Your Project?](#how-to-submit-your-project)
-    + [Video Tutorial - How To Submit Your Project?](video-tutorial---how-to-submit-your-project)
   * [Rules and Code of Conduct](#rules-and-code-of-conduct)
 
-## Steps To Use This Repo 
-
-
-* Click on [**Use this template**](https://github.com/adityaoberai/hackathon-submissions-repo-template/generate) to generate a copy of the repository for your hackathon.
-<a href="https://github.com/adityaoberai/hackathon-submissions-repo-template/generate" target="_blank">
-  <img width="94" alt="image" src="https://user-images.githubusercontent.com/31401437/170708931-be980535-a6fe-4540-a8d1-9515059f5d9c.png">
-</a>
-
-* Visit the [Issue Form for Hackathon Submissions](.github/ISSUE_TEMPLATE/submission.yaml) and edit it to your comfort. [*(Guide)*](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms)
-
-> *Note: In order to use the Hackathon Submissions Issue Form, your repository must be public.*
 
 * Add new **Issue Labels** (and remove the existing ones) so that the list looks as follows. [*(Guide)*](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels)
 <img width="921" alt="image" src="https://user-images.githubusercontent.com/31401437/170709980-6b54a747-789c-41a5-9ed0-f398bbb767b9.png">
@@ -130,54 +111,34 @@ csvfileo.close()
 
 ---
 
-# XYZ Hackathon: Example Hackathon Description
+# Quantum Game Hackathon
 
 ## About The Hackathon
 
-XYZ Hackathon is a 48-hour digital hackathon where young minds possessing a passion for solving real-life problems come together to build innovative solutions. Whether you are a beginner or an expert coder, here is the perfect chance to hone your skills and witness the competitive yet inclusive developer community around you!
-
-Learn new technologies, enhance your team management and presentation skills, and get mentored by experts- all in one place!
+In light of the UC Davis Picnic Day 2023, the Quantum Computing Club at Davis is hosting a three-day event to design exciting games showcasing the principles of quantum mechanics. Whether you are a beginner or an expert coder, here is the perfect chance to hone your skills and get to know our quantum community!
 
 ## Timeline
 
-* **Start Date and Time:** 1st January 2022 at 11:00 AM IST
-* **Start Date and Time:** 3rd January 2022 at 11:00 AM IST
-
-## Tracks
-
-* Track 1
-
-> Description of Track 1
-
-* Track 2
-
-> Description of Track 2
-
-* Track 3
-
-> Description of Track 3
-
-* Track 4
-
-> Description of Track 4
+* **Start Date and Time:** January 26th, 2023 at 6:00 PM PST
+* **End Date and Time:** January 28th, 2023 at 8:00 PM PST
 
 ## Prizes
 
 * **1st Prize**
 
->* Cash worth $500
->* XYZ Hackathon Swags
+>* Game will be showcased on Picnic Day
+>* Swag
 
 
 * **2nd Prize**
 
->* Cash worth $300
->* XYZ Hackathon Swags
+>* Pizza Voucher
+>* Swag
 
 * **3rd Prize**
 
->* Cash worth $100
->* XYZ Hackathon Swags
+>* Handshake
+>* Swag
 
 ## Judging Parameters
 
@@ -209,10 +170,6 @@ Follow the steps to submit your project in the hackathon:
 <img width="951" alt="image" src="https://user-images.githubusercontent.com/31401437/170703875-ec6a0737-f910-4734-9c5b-cb359d12ac91.png">
 
 * **Enter your submission details and you're good to go!**
-
-### Video Tutorial - How To Submit Your Project?
-
-https://user-images.githubusercontent.com/31401437/170713948-5bfe0c35-e1aa-4eeb-8456-fbb02aeb9292.mp4
 
 ## Rules and Code of Conduct
 
