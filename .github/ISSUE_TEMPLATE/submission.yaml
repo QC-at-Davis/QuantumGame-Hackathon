@@ -55,18 +55,6 @@ body:
       placeholder: The technologies I used...
     validations:
       required: true
-  - type: dropdown
-    id: track
-    attributes:
-      label: Hackathon Track
-      description: What hackathon track are you opting in?
-      options:
-        - Track 1
-        - Track 2
-        - Track 3
-        - Track 4
-    validations:
-      required: true
   - type: input
     id: project-link
     attributes:
