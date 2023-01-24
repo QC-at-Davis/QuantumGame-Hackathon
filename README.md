@@ -1,115 +1,12 @@
 ## Table Of Contents
 
-- [XYZ Hackathon: Example Hackathon Description](#xyz-hackathon-example-hackathon-description)
-  * [About The Hackathon](#about-the-hackathon)
-  * [Timeline](#timeline)
-  * [Tracks](#tracks)
-  * [Prizes](#prizes)
-  * [Judging Parameters](#judging-parameters)
-  * [How To Submit Your Project?](#how-to-submit-your-project)
-  * [Rules and Code of Conduct](#rules-and-code-of-conduct)
+* [About The Hackathon](#about-the-hackathon)
+* [Timeline](#timeline)
+* [Prizes](#prizes)
+* [Judging Parameters](#judging-parameters)
+* [How To Submit Your Project?](#how-to-submit-your-project)
+* [Rules and Code of Conduct](#rules-and-code-of-conduct)
 
-
-* Add new **Issue Labels** (and remove the existing ones) so that the list looks as follows. [*(Guide)*](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels)
-<img width="921" alt="image" src="https://user-images.githubusercontent.com/31401437/170709980-6b54a747-789c-41a5-9ed0-f398bbb767b9.png">
-
-* Edit the **Example Hackathon Description** to add/update all the necessary details regarding your hackathon.
-
-* Edit the [Code of Conduct](CODE_OF_CONDUCT.md) to add details of the organizers and the hackathon.
-
-* Review (and update) the [Rules](RULES.md) to add your own set of rules for the hackathon.
-
-* Remove the contents of the Readme before the hackathon description.
-
-## Exporting Submission Links 
-
-If you want export all submission links to a CSV file, follow the following steps:
-
-* Install `Python 3.x` on your system.
-
-* Create a folder to store your submissions CSV.
-
-* Enter the folder, create a file `script.py` and add the following code:
-
-```python
-"""
-Inspired by script the created by prateek032: https://gist.github.com/prateek032/06273e179bb034800c61
-"""
-
-import csv
-import requests
-import json
-
-REPO = ""  # format is username/repo
-ISSUES_FOR_REPO_URL = "https://api.github.com/repos/%s/issues" % REPO
-arg = "?state=all"
-
-# Since the hackathon repos must be public (to allow issue forms), username and password are not necessary.
-
-
-def write_issues(r):
-    "output a list of issues to csv"
-    if not r.status_code == 200:
-        raise Exception(r.status_code)
-    for issue in r.json():
-        Tag = []
-        labels = issue["labels"]
-        for label in labels:
-            Tag.append(label["name"])
-
-        if "issues" in issue["html_url"]:
-            csvout.writerow(
-                [
-                    issue["number"],
-                    issue["title"],
-                    Tag,
-                    issue["state"],
-                    issue["created_at"],
-                    issue["html_url"],
-                ]
-            )
-
-
-r = requests.get(ISSUES_FOR_REPO_URL + arg)
-
-csvfile = "%s-issues.csv" % (REPO.replace("/", "-"))
-csvfileo = open(csvfile, "w")
-csvout = csv.writer(csvfileo)
-csvout.writerow(["Id", "Title", "Tag", "State", "Open Date", "URL"])
-
-write_issues(r)
-
-# more pages? examine the "link" header returned
-if "link" in r.headers:
-    pages = dict(
-        [
-            (rel[6:-1], url[url.index("<") + 1 : -1])
-            for url, rel in [link.split(";") for link in r.headers["link"].split(",")]
-        ]
-    )
-
-    while "last" in pages and "next" in pages:
-        r = requests.get(pages["next"], auth=AUTH)
-        write_issues(r)
-        if pages["next"] == pages["last"]:
-            break
-        pages = dict(
-            [
-                (rel[6:-1], url[url.index("<") + 1 : -1])
-                for url, rel in [
-                    link.split(";") for link in r.headers["link"].split(",")
-                ]
-            ]
-        )
-
-csvfileo.close()
-```
-
-* Open your shell in the same folder and run the command `pip install requests` followed by `python script.py`.
-
-* You should have a CSV file with all the submissions in your folder.
-
----
 
 # Quantum Game Hackathon
 
@@ -142,22 +39,17 @@ In light of the UC Davis Picnic Day 2023, the Quantum Computing Club at Davis is
 
 ## Judging Parameters
 
-1. Project Completeness and Functionality *(25%)*
+1. Project Completeness and Functionality *(40%)*
 
-> * Does the project stand as an individual end-to-end product?
-> * Is it a functioning solution that can scale in the real world?
+> * Does the game stand as an individual end-to-end product?
 
-2. Creativity in Design *(25%)*
+2. Creativity in Design *(30%)*
 
-> * Does the project bring innovations in design and create comfortable user experiences?
+> * Does the game incorporate quantum computing princicples into its design and create comfortable user experiences?
 
-3. Innovation in Idea *(25%)*
+3. Innovation in Idea *(30%)*
 
-> * Does the project attempt to solve a previously unsolved problem?
-
-4. Social Impact *(25%)*
-
-> * Does the project have an impact on people's lives at a social level?
+> * Does the game excel at teaching quantum computing through gamification?
 
 ## How To Submit Your Project?
 
