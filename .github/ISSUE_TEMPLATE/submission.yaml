@@ -51,7 +51,7 @@ body:
     id: tech-stack
     attributes:
       label: Tech Stack
-      description: How have you built this project? Mention the technologies/methods/platforms you used to build your project
+      description: How have you built this project? Mention the quantum computing princicples you used to build your project
       placeholder: The technologies I used...
     validations:
       required: true
