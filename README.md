@@ -40,7 +40,7 @@ In light of the UC Davis Picnic Day 2023, the Quantum Computing Club at Davis is
 
 2. Creativity in Design *(30%)*
 
-> * Does the game incorporate quantum computing princicples into its design and create comfortable user experiences?
+> * Does the game incorporate quantum computing principles into its design and create comfortable user experiences?
 
 3. Innovation in Idea *(30%)*
 
