@@ -17,25 +17,20 @@ In light of the UC Davis Picnic Day 2023, the Quantum Computing Club at Davis is
 ## Timeline
 
 * **Start Date and Time:** January 26th, 2023 at 6:00 PM PST
-* **End Date and Time:** January 28th, 2023 at 8:00 PM PST
+* **End Date and Time:** January 28th, 2023 at 6:30 PM PST
 
 ## Prizes
 
-* **1st Prize**
+* **Winner**
 
->* Game will be showcased on Picnic Day
->* Swag
+>* Game will be showcased on Picnic Day!
+>* Gift Cards valued over $100
 
 
-* **2nd Prize**
+* **Runner-Up**
 
->* Pizza Voucher
->* Swag
+>* Left-over snacks
 
-* **3rd Prize**
-
->* Handshake
->* Swag
 
 ## Judging Parameters
 
